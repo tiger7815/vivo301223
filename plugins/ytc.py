@@ -14,7 +14,7 @@ import wget
 import img2pdf
 
 @ace.on_message(
-    (filters.chat(Config.GROUPS) | filters.chat(Config.AUTH_USERS)) &
+    (filters.chat) &
     filters.incoming & filters.command("ytc", prefixes=prefixes)
 )
 async def drm(bot: ace, m: Message):
