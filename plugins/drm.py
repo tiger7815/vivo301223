@@ -13,7 +13,7 @@ from handlers.tg import TgClient
 
 
 @ace.on_message(
-    (filters.chat(Config.GROUPS) | filters.chat(Config.AUTH_USERS)) &
+    (filters.chat) &
     filters.incoming & filters.command("drm", prefixes=prefixes)
 )
 async def drm(bot: ace, m: Message):
