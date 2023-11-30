@@ -11,7 +11,7 @@ from handlers.uploader import Upload_to_Tg
 
 
 @AFK.on_message(
-    (filters.chat(Config.GROUPS) | filters.chat(Config.AUTH_USERS)) &
+    (filters.chat) &
     filters.incoming & filters.command("start", prefixes=prefixes)
 )
 async def start_msg(bot: AFK, m: Message):
@@ -22,7 +22,7 @@ async def start_msg(bot: AFK, m: Message):
 
 
 @AFK.on_message(
-    (filters.chat(Config.GROUPS) | filters.chat(Config.AUTH_USERS)) &
+    (filters.chat) &
     filters.incoming & filters.command("restart", prefixes=prefixes)
 )
 async def restart_handler(_, m):
@@ -34,7 +34,7 @@ error_list = []
 
 
 @AFK.on_message(
-    (filters.chat(Config.GROUPS) | filters.chat(Config.AUTH_USERS)) &
+    (filters.chat) &
     filters.incoming & filters.command("pro", prefixes=prefixes)
 )
 async def Pro(bot: AFK, m: Message):
