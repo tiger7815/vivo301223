@@ -1,7 +1,7 @@
 # BATCH EXTRACTOR AND DOWNLOADER
 
 ## How to Deploy? 🤔. you can deploy over Heroku or your VPS too.
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Rahulsinghcreator/vivo301223)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/tiger7815/vivo301223)
 
 ## COMMANDS
 ### AVAILABLE COMMANDS 
